@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본요소테스트페이지</title>
+</head>
+<body>
+    <h1>HTML 기본 요소 테스트 페이지</h1>
+    <a href="#intro">소개</a>
+    <a href="#list">목록</a>
+    <a href="#survey">설문조사</a>
+    <a href="#team">팀원정보</a>
+    <hr>
+    <h2>소개</h2>
+    <P>이 페이지는 HTML의 자주 사용하는 태그들을 테스트하기 위해 만들어졌습니다.</P>
+<hr>
+
+<h2 id="list">목록 테스트</h2>
+<h3>순서 있는 목록(ol)</h3>
+<ol>
+    <li>HTML 배우기</li>
+    <li>CSS 배우기</li>
+    <li>JavaScript 배우기</li>
+</ol>
+<h3>순서 없는 목록(ul)</h3>
+<ul>
+    <li>노트북</li>
+    <li>키보드</li>
+    <li>마우스</li>
+</ul>
+<hr>
+
+<h2 id="survey">설문조사 폼</h2>
+<form action="#" method="post">
+    <p>이름: <input type="text" name="name"></p>
+    <p>이메일: <input type="email" name="email"></p>
+    <p>1.좋아하는 과일을 선택하세요 (체크박스)</p>
+    <input type="checkbox" id="apple" name="fruit" value="apple">
+    <label>사과</label><br>
+    <input type="checkbox" id="banana" name="fruit" value="banana">
+    <label>바나나</label><br>
+    <input type="checkbox" id="grape" name="fruit" value="grape">
+    <label>포도</label><br>
+    <p>2.선호하는 개발 언어는 무엇인가요? (라디오 버튼)</p>
+    <input type="radio" id="html" name="language" value="html">
+    <label>HTML</label><br>
+    <input type="radio" id="css" name="language" value="css">
+    <label>CSS</label><br>
+    <input type="radio" id="javascript" name="language" value="javascript">
+    <label>JavaScript</label><br>
+    <p>의견: <textarea name="opinion" rows="4" cols="50"></textarea></p>
+    <button type="submit">제출</button>
+</form>
+
+<hr>
+<h2 id="team">팀원 정보 표</h2>
+<h3>프로젝트 팀원 목록</h3>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>이름</th>
+            <th>역할</th>
+            <th>이메일</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>홍길동</td>
+            <td>프론트엔드</td>
+            <td>hong@example.com</td>
+        </tr>
+        <tr>
+            <td>김영희</td>
+            <td>백엔드</td>
+            <td>kim@example.com</td>
+        </tr>
+        <tr>
+            <td>이철수</td>
+            <td>디자인</td>
+            <td>lee@example.com</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+</body>
+</html>
