@@ -1,0 +1,204 @@
+/* 배경색 지정하기 */
+/* background-color: 색*/
+
+#backcolor div::nth-child(1) {
+    background-color: black;
+    color: white;
+
+#backcolor div::nth-child(2) {
+    background-color: #aaaaaa;
+    color: white;
+
+    #backcolor div::nth-child(3) {
+    background-color: rgb(255,255,0);
+    color: white;
+
+    #backcolor div::nth-child(4) {
+    background-color: rgba(0,255,255,0.3);
+    color: white;
+}
+
+/* 무늬 넣기 */
+#backcolor div::nth-child(5) {
+    width: 300px;
+    height : 300px;
+    background:repeating-linear-gradient(
+        45deg,
+        #f06 0px,
+        #f06 20px,
+        #fff 20px,
+        #fff 40px
+
+    );
+    color: white;
+}
+
+#backcolor div::nth-child(6) {
+    /* width: 300px;
+    height : 300px; */
+    background: radial-gradient(
+        #000 10%,
+        transparent 10%),
+        background-size 20px, 20px
+    
+}
+
+#backcolor div::nth-child(7) {
+    height: 300px;
+    background: repeating-linear-gradient(
+        90deg,
+        #f06 0px,
+        #f06 20px,
+        #fff 20px,
+        #fff 40px
+    ),
+    repeating-linear-gradient(
+        0deg,
+        #f06 0px,
+        #f06 20px,
+        #fff 20px,
+        #fff 40px
+    );
+    background-blend-mode: multiply;
+    color : white;
+}
+
+/* 배경 이미지 넣기 */
+
+#backimg div {
+    width:200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+/* 이미지 넣기 */
+
+#backimg div:nth-child(1) {
+    background-image: url(../img/pattern.png);
+}
+
+#backimg div:nth-child(2) {
+    width: 500px;
+    height: 500px;
+    background-image: url(../img/car1.jpg);
+    background-repeat: repeat-x;
+}
+
+/* 삽입한 이미지를 가로로만 반복*/
+#backimg div:nth-child(3) {
+    width: 500px;
+    height: 300px;
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat-y;
+}
+
+#backimg div:nth-child(4) {
+    width: 300px;
+    height: 500px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+}
+
+#backimg div:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+}
+
+#backimg div:nth-child(6) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#backimg div:nth-child(7) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#backimg div:nth-child(8) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#backimg div:nth-child(8) {
+    width: 300px;
+    height: 500px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+}
+
+#backimg div:nth-child(9) {
+    width: 300px;
+    height: 500px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: 200px 100px;
+}
+
+#backimg div:nth-child(10) {
+    width: 300px;
+    height: 500px;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: 40% 60%;
+}
+
+/* 배경 이미지 크기 조절하기 */
+
+#img_size div {
+    width: 300px;
+    height: 200px;
+    bordor: 1px solid black;
+}
+
+/* contain 삽입할 공간보다 이미지가 
+클 때 크기를 공간에 맞게 조정해서 넣음 */
+
+#img_size div first-child {
+    background-image: url(../img/rose.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* cover 이미지를 공간에 꽉 차게 사이즈 조절*/
+#img_size div last-child {
+    background-image: url("../img/rose.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* 두 개의 이미지를 겹치고 싶 을 때*/
+
+#twoinone {
+    width: 90vw;
+    height: 90vh;
+    margin: 4vh auto;
+    border: 1px solid black;
+}
+
+#twoinone div: :first-child {
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid red;
+    background-attachment: fixed;
+}
+
+#twoinon div:first-child {
+    background-image: url("../img/car1.jpg");
+
+}
