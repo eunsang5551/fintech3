@@ -202,3 +202,49 @@
     background-image: url("../img/car1.jpg");
 
 }
+
+/* position 요소를 자유롭게 배치하기 */
+/* relative: 적용된 요소의 현재 위칫값을 기준으로 
+            상대위치를 정함 */
+/* absolute: 부모 요소의 특정 구간을 기준으로 절대 위치를 정함 */
+/* fixed: 웹브라우저를 기준으로 절대 위치를 지정 */
+
+#position .box {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 100px;
+    color: white
+}
+
+#position .red-box {
+    background-color: red;
+}
+
+#position .green-box {
+    background-color: green;
+}
+
+#position .blue-box {
+    background-color: blue;
+}
+
+/* relative  */
+#position .green-box {
+    position: relative;
+    left: 200px;
+    top: 200px;
+
+}
+
+#positon .blue-box {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#position .red-box {
+    position: fixed;
+    left: 400px;
+    top: 400px;
+}

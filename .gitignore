@@ -1,0 +1,15 @@
+ 
+.ipynb_checkpoints 
+*.csv
+*.json 
+*.xlsx 
+.env 
+*.env 
+build/ 
+dist/ 
+*.spec 
+*.exe 
+*.tsv 
+*.tnv 
+catboost_info/
+data/
