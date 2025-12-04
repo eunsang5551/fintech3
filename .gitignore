@@ -13,3 +13,4 @@ dist/
 *.tnv 
 catboost_info/
 data/
+model/
